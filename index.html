@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
       <link href="CSS/styles.css" rel="stylesheet" type="text/css" />
-      
+
       <title>Image slider</title>
   </head>
 
@@ -26,14 +26,20 @@
 
     <main role="main">
       <div class="slider-container">
-        <a onclick=""></a>
         <ul>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
+          <li class="mySlides"><img src="images/michael_keaton_batman.jpg" alt="Michael Keaton as Batman"></li>
+          <li class="mySlides"><img src="images/christian_bale_batman.jpg" alt="Christian Bale as Batman"></li>
+          <li class="mySlides"><img src="images/lego_batman.png" alt="Lego Batman"></li>
+          <li class="mySlides"><img src="images/adam_west_batman.jpg" alt="Adam West as Batman"></li>
         </ul>
-        <a onclick=""></a>
+        <div>
+          <span class="dot" onclick=""></span>
+          <span class="dot" onclick=""></span>
+          <span class="dot" onclick=""></span>
+          <span class="dot" onclick=""></span>
+        </div>
+        <a class="btn-prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="btn-next" onclick="plusSlides(1)">&#10095;</a>
       </div>
     </main>
 
@@ -44,5 +50,6 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="JS/slider.js"></script>
   </body>
 </html>

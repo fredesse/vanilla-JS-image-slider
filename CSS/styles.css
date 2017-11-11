@@ -1,0 +1,32 @@
+/*//////////////////////
+GENERAL STYLING
+//////////////////////*/
+
+* {
+  box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+/*//////////////////////
+IMAGE SLIDER STYLING
+//////////////////////*/
+
+.btn-next:hover,
+.btn-prev:hover {
+  cursor: pointer;
+}
