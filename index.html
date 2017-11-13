@@ -39,26 +39,34 @@
 
     <main role="main">
       <div>
-        <ul class="slider-container">
-          <li class="slides-batman"><img class="img-fluid" src="images/adam_west_batman.jpg" alt="Adam West as Batman"></li>
-          <li class="slides-batman"><img class="img-fluid" src="images/michael_keaton_batman.jpg" alt="Michael Keaton as Batman"></li>
-          <li class="slides-batman"><img class="img-fluid" src="images/christian_bale_batman.jpg" alt="Christian Bale as Batman"></li>
-          <li class="slides-batman"><img class="img-fluid" src="images/lego_batman.jpg" alt="Lego Batman"></li>
-        </ul>
+        <div class="slider-container">
+          <div>
+            <a class="btn-prev" onclick="navigateImages(-1)">&#10094;</a>
+          </div>
+          <ul class="slider-list">
+            <li class="slides-batman"><img class="img-fluid" src="images/adam_west_batman.jpg" alt="Adam West as Batman"></li>
+            <li class="slides-batman"><img class="img-fluid" src="images/michael_keaton_batman.jpg" alt="Michael Keaton as Batman"></li>
+            <li class="slides-batman"><img class="img-fluid" src="images/christian_bale_batman.jpg" alt="Christian Bale as Batman"></li>
+            <li class="slides-batman"><img class="img-fluid" src="images/lego_batman.jpg" alt="Lego Batman"></li>
+          </ul>
+          <div>
+            <a class="btn-next" onclick="navigateImages(1)">&#10095;</a>
+          </div>
+        </div>
         <div>
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentImage(1)"></span>
+          <span class="dot" onclick="currentImage(2)"></span>
+          <span class="dot" onclick="currentImage(3)"></span>
+          <span class="dot" onclick="currentImage(4)"></span>
         </div>
         <div class="slider-btns">
-          <a class="btn-prev" onclick="navigateSlider(-1)">&#10094;</a>
-          <a class="btn-next" onclick="navigateSlider(1)">&#10095;</a>
+          <a class="btn-prev" onclick="navigateImages(-1)">&#10094;</a>
+          <a class="btn-next" onclick="navigateImages(1)">&#10095;</a>
         </div>
       </div>
     </main>
 
-    <footer  class="fixed-bottom" role="contentinfo">
+    <footer class="fixed-bottom" role="contentinfo">
       <span class="copyright">Copyright 2017</span>
     </footer>
 
