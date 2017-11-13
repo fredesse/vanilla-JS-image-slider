@@ -8,7 +8,7 @@
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
       <link href="CSS/styles.css" rel="stylesheet" type="text/css" />
 
-      <title>Image slider</title>
+      <title>Batman slider</title>
   </head>
 
   <body>
@@ -38,34 +38,39 @@
     </header>
 
     <main role="main">
-      <div>
+      <div class="container">
         <h1>Lorem Ipsum</h1>
-        <p class="text-justify p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ac sapien pellentesque sagittis at ac justo. Nullam et libero a velit egestas porta. Pellentesque finibus nec nibh ut tristique. Phasellus sed dolor in arcu fermentum auctor ac et nisi. In imperdiet mi libero, in dictum tellus mollis a. Curabitur imperdiet ipsum lorem, ac dignissim enim rutrum et. Nam turpis lectus, vehicula nec lorem eu, maximus aliquet est. Suspendisse ut sagittis risus.</p>
-        <div class="slider-container">
-          <div>
-            <a class="btn-prev" onclick="navigateImages(-1)">&#10094;</a>
+        <div class="text-container">
+          <p class="text-justify p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tortor ac sapien pellentesque sagittis at ac justo. Nullam et libero a velit egestas porta. Pellentesque finibus nec nibh ut tristique. Phasellus sed dolor in arcu fermentum auctor ac et nisi. In imperdiet mi libero, in dictum tellus mollis a. Curabitur imperdiet ipsum lorem, ac dignissim enim rutrum et. Nam turpis lectus, vehicula nec lorem eu, maximus aliquet est. Suspendisse ut sagittis risus.</p>
+          <p class="text-justify p-container hidden-md-down">Aliquam neque nisl, malesuada nec molestie at, rutrum ultrices nisl. Donec vehicula dignissim dictum. Nam in metus sit amet est mattis vestibulum. Nam consectetur mattis interdum. Morbi ultrices et neque vel mollis. Nam commodo libero est, at vestibulum tortor vehicula pellentesque. Proin hendrerit aliquet dignissim. Nam ornare dapibus ipsum ac vulputate. Donec et pretium enim. Mauris dapibus tellus et mauris volutpat, id vulputate eros elementum. Cras vel rhoncus sapien, nec blandit mi. Duis vestibulum et ex volutpat lobortis. Fusce luctus faucibus sagittis. Maecenas aliquam bibendum dui, eu consequat libero pretium ac. Suspendisse potenti.</p>
+        </div>
+        <div>
+          <div class="slider-container">
+            <div>
+              <a class="btn-prev" onclick="navigateImages(-1)">&#10094;</a>
+            </div>
+            <ul class="slider-list">
+              <li class="slides-batman"><img class="img-fluid" src="images/adam_west_batman.jpg" alt="Adam West as Batman"></li>
+              <li class="slides-batman"><img class="img-fluid" src="images/michael_keaton_batman.jpg" alt="Michael Keaton as Batman"></li>
+              <li class="slides-batman"><img class="img-fluid" src="images/christian_bale_batman.jpg" alt="Christian Bale as Batman"></li>
+              <li class="slides-batman"><img class="img-fluid" src="images/lego_batman.jpg" alt="Lego Batman"></li>
+            </ul>
+            <div>
+              <a class="btn-next" onclick="navigateImages(1)">&#10095;</a>
+            </div>
           </div>
-          <ul class="slider-list">
-            <li class="slides-batman"><img class="img-fluid" src="images/adam_west_batman.jpg" alt="Adam West as Batman"></li>
-            <li class="slides-batman"><img class="img-fluid" src="images/michael_keaton_batman.jpg" alt="Michael Keaton as Batman"></li>
-            <li class="slides-batman"><img class="img-fluid" src="images/christian_bale_batman.jpg" alt="Christian Bale as Batman"></li>
-            <li class="slides-batman"><img class="img-fluid" src="images/lego_batman.jpg" alt="Lego Batman"></li>
-          </ul>
           <div>
+            <span class="dot" onclick="currentImage(1)"></span>
+            <span class="dot" onclick="currentImage(2)"></span>
+            <span class="dot" onclick="currentImage(3)"></span>
+            <span class="dot" onclick="currentImage(4)"></span>
+          </div>
+          <div class="slider-btns">
+            <a class="btn-prev" onclick="navigateImages(-1)">&#10094;</a>
             <a class="btn-next" onclick="navigateImages(1)">&#10095;</a>
           </div>
         </div>
-        <div>
-          <span class="dot" onclick="currentImage(1)"></span>
-          <span class="dot" onclick="currentImage(2)"></span>
-          <span class="dot" onclick="currentImage(3)"></span>
-          <span class="dot" onclick="currentImage(4)"></span>
-        </div>
-        <div class="slider-btns">
-          <a class="btn-prev" onclick="navigateImages(-1)">&#10094;</a>
-          <a class="btn-next" onclick="navigateImages(1)">&#10095;</a>
-        </div>
-        <p class="text-justify p-container">Aliquam neque nisl, malesuada nec molestie at, rutrum ultrices nisl. Donec vehicula dignissim dictum. Nam in metus sit amet est mattis vestibulum. Nam consectetur mattis interdum. Morbi ultrices et neque vel mollis. Nam commodo libero est, at vestibulum tortor vehicula pellentesque. Proin hendrerit aliquet dignissim. Nam ornare dapibus ipsum ac vulputate. Donec et pretium enim. Mauris dapibus tellus et mauris volutpat, id vulputate eros elementum. Cras vel rhoncus sapien, nec blandit mi. Duis vestibulum et ex volutpat lobortis. Fusce luctus faucibus sagittis. Maecenas aliquam bibendum dui, eu consequat libero pretium ac. Suspendisse potenti.</p>
+        <p class="text-justify p-container hidden-md-up">Aliquam neque nisl, malesuada nec molestie at, rutrum ultrices nisl. Donec vehicula dignissim dictum. Nam in metus sit amet est mattis vestibulum. Nam consectetur mattis interdum. Morbi ultrices et neque vel mollis. Nam commodo libero est, at vestibulum tortor vehicula pellentesque. Proin hendrerit aliquet dignissim. Nam ornare dapibus ipsum ac vulputate. Donec et pretium enim. Mauris dapibus tellus et mauris volutpat, id vulputate eros elementum. Cras vel rhoncus sapien, nec blandit mi. Duis vestibulum et ex volutpat lobortis. Fusce luctus faucibus sagittis. Maecenas aliquam bibendum dui, eu consequat libero pretium ac. Suspendisse potenti.</p>
       </div>
     </main>
 
