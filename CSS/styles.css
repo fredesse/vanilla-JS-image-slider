@@ -18,6 +18,7 @@ body {
   background-color: #fff;
 }
 main {
+  margin-top: 4.5em;
   padding: 5% 2.5%;
 }
 
@@ -45,6 +46,15 @@ HEADER STYLING
 
 .text-black {
   color: rgba(0,0,0,.9);
+}
+
+/*//////////////////////
+MAIN CONTENT STYLING
+//////////////////////*/
+
+.p-container {
+  max-width: 450px;
+  margin: 2em auto;
 }
 
 
@@ -88,10 +98,19 @@ IMAGE SLIDER STYLING
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.5);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: rgb(240,173,78);
+}
+
+.dot:hover {
+  background-color: rgba(240,173,78,.3);
 }
 
 /*//////////////////////
