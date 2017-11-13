@@ -6,7 +6,7 @@ GENERAL STYLING
   box-sizing: border-box;
 }
 
-.mySlides {
+.slides-batman {
   display: none;
 }
 
@@ -15,18 +15,89 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  background-color: #000;
+  background-color: #fff;
+}
+main {
+  padding: 5% 2.5%;
 }
 
 ul {
   list-style: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+footer {
+  padding: .5em 0;
+  border-top: 1px solid rgba(0,0,0,.5);
+  font-size: .8em;
+}
+
+/*//////////////////////
+HEADER STYLING
+//////////////////////*/
+
+.heading {
+  text-align: left;
+}
+
+.text-black {
+  color: rgba(0,0,0,.9);
+}
+
+
 /*//////////////////////
 IMAGE SLIDER STYLING
 //////////////////////*/
 
+.slider-container {
+  padding: 0;
+}
+
+.slides-batman {
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+.slider-btns {
+  font-size: 2em;
+  text-align: center;
+}
+
+.btn-prev,
+.btn-next {
+  padding: .5em .5em;
+}
+
 .btn-next:hover,
 .btn-prev:hover {
   cursor: pointer;
+}
+
+/*//////////////////////
+MEDIA QUERIES
+//////////////////////*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .heading-name {
+    min-width: 300px;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
 }

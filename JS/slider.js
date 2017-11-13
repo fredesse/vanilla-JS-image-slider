@@ -1,17 +1,18 @@
+const slides = document.getElementsByClassName("slides-batman");
+const dots = document.getElementsByClassName("dot");
 let slideIndex = 1;
 
-plusSlides = (n) => {
-  showSlides(slideIndex += n);
+navigateSlider = (n) => {
+  showSlide(slideIndex += n);
 };
 
 currentSlide = (n) => {
-  showSlides(slideIndex = n);
+  showSlide(n);
 };
 
-showSlides = (n) => {
-  const slides = document.getElementsByClassName("mySlides");
-  const dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex = 1 };
+showSlide = (n) => {
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -22,4 +23,4 @@ showSlides = (n) => {
   dots[slideIndex - 1].className += " active";
 };
 
-showSlides(slideIndex);
+showSlide(slideIndex);

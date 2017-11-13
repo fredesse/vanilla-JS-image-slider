@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=0"/>
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
@@ -14,36 +14,51 @@
   <body>
 
     <header role="banner">
-      <div class="main-nav" role="navigation">
-        <h1 class="name"><a href="#">Image slider</a></h1>
-        <ul class="nav">
-          <li><a href="#">Menu 1</a></li>
-          <li><a href="#">Menu 2</a></li>
-          <li><a href="#">Menu 3</a></li>
-        </ul>
-      </div>
+      <nav class="navbar navbar-toggleable-sm navbar-light bg-warning" role="navigation">
+        <div class="heading">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h1 class="heading-name"><a class="text-black" href="#">Batman slider</a></h1>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Villains</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sidekicks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Alfreds</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main role="main">
-      <div class="slider-container">
-        <ul>
-          <li class="mySlides"><img src="images/michael_keaton_batman.jpg" alt="Michael Keaton as Batman"></li>
-          <li class="mySlides"><img src="images/christian_bale_batman.jpg" alt="Christian Bale as Batman"></li>
-          <li class="mySlides"><img src="images/lego_batman.png" alt="Lego Batman"></li>
-          <li class="mySlides"><img src="images/adam_west_batman.jpg" alt="Adam West as Batman"></li>
+      <div>
+        <ul class="slider-container">
+          <li class="slides-batman"><img class="img-fluid" src="images/adam_west_batman.jpg" alt="Adam West as Batman"></li>
+          <li class="slides-batman"><img class="img-fluid" src="images/michael_keaton_batman.jpg" alt="Michael Keaton as Batman"></li>
+          <li class="slides-batman"><img class="img-fluid" src="images/christian_bale_batman.jpg" alt="Christian Bale as Batman"></li>
+          <li class="slides-batman"><img class="img-fluid" src="images/lego_batman.jpg" alt="Lego Batman"></li>
         </ul>
         <div>
-          <span class="dot" onclick=""></span>
-          <span class="dot" onclick=""></span>
-          <span class="dot" onclick=""></span>
-          <span class="dot" onclick=""></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
         </div>
-        <a class="btn-prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="btn-next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="slider-btns">
+          <a class="btn-prev" onclick="navigateSlider(-1)">&#10094;</a>
+          <a class="btn-next" onclick="navigateSlider(1)">&#10095;</a>
+        </div>
       </div>
     </main>
 
-    <footer role="contentinfo">
+    <footer  class="fixed-bottom" role="contentinfo">
       <span class="copyright">Copyright 2017</span>
     </footer>
 
